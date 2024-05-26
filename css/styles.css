@@ -309,7 +309,7 @@ img {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
 
-  transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
+  transition: transform 300ms ease-in-out;
 }
 
 .modal-btn {
@@ -337,12 +337,6 @@ img {
 
 .backdrop.is-hidden .modal-wrapper {
   transform: translate(-50%, -50%) scale(0.4);
-  opacity: 0;
-}
-
-.backdrop .modal-wrapper {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
 }
 
 /*Особливості*/
@@ -528,11 +522,6 @@ img {
   fill: #fff;
 }
 
-/*.socials-link:focus .socials-icon,.socials-link:hover .socials-icon
- {
-  fill: #fff;
-}
-
 /*Постійні клієнти*/
 
 .clients-list {
@@ -684,8 +673,7 @@ img {
   border: none;
   padding: 6px 22px;
 
-  transition: transform var(--anim-slov), box-shadow var(--anim-slov),
-    background var(--anim-slov);
+  transition: box-shadow var(--anim-slov), background var(--anim-slov);
 }
 
 .btn-filters1:active,
@@ -710,8 +698,8 @@ img {
   cursor: pointer;
   border: none;
   padding: 6px 22px;
-  transition: transform var(--anim-slov), box-shadow var(--anim-slov),
-    background var(--anim-slov), color var(--anim-slov);
+  transition: box-shadow var(--anim-slov), background var(--anim-slov),
+    color var(--anim-slov);
 }
 
 .btn-filters:hover,
